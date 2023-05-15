@@ -16,15 +16,6 @@
         app:lottie_rawRes="@raw/logo"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"/>
-
-   <Button
-       android:layout_height="wrap_content"
-       android:layout_width="match_parent"
-       android:text="Ingresar"
-       android:id="@+id/Ingresar"
-       />
-
-
-
+    
 
 </LinearLayout>
