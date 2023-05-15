@@ -29,6 +29,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.ar.sceneform:filament-android:1.17.1'
     def lottieVersion = "3.4.0"
     implementation "com.airbnb.android:lottie:6.0.0"
     implementation 'androidx.appcompat:appcompat:1.6.1'

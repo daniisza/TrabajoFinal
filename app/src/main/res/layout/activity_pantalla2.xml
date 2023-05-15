@@ -6,7 +6,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Pantalla2">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imagen"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/deportes"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
 
 
 
