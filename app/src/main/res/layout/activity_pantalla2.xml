@@ -9,37 +9,42 @@
     android:orientation="vertical"
     tools:context=".Pantalla2">
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imagen"
+    <Button
+        android:id="@+id/button1"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/deportes" />
+        android:layout_height="140dp"
+        android:layout_weight="0"
+        android:adjustViewBounds="true"
+        android:drawableTop="@drawable/tecno1" />
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imagen2"
+    <Button
+        android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/economia" />
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imagen3"
+        android:layout_height="140dp"
+        android:layout_weight="0"
+        android:adjustViewBounds="true"
+        android:drawableTop="@drawable/internacional1" />
+    <Button
+        android:id="@+id/button3"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/entretenimiento" />
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imagen4"
+        android:layout_height="140dp"
+        android:layout_weight="0"
+        android:adjustViewBounds="true"
+        android:drawableTop="@drawable/economia1" />
+    <Button
+        android:id="@+id/button4"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/tecnologia" />
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imagen5"
+        android:layout_height="140dp"
+        android:layout_weight="0"
+        android:adjustViewBounds="true"
+        android:drawableTop="@drawable/entretenimiento1" />
+    <Button
+        android:id="@+id/button5"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/internacional" />
+        android:layout_height="140dp"
+        android:layout_weight="0"
+        android:adjustViewBounds="true"
+        android:drawableTop="@drawable/deportes1" />
 
 
 
