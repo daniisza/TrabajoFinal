@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">News on the Throne</string>
+    <string name="asunto">Asunto</string>
+    <string name="cuerpo_noticia">Cuerpo Noticia</string>
+    <string name="tiempo">1:00</string>
+
+
 </resources>
