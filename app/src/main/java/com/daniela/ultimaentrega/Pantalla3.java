@@ -1,11 +1,14 @@
 package com.daniela.ultimaentrega;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.ListAdapter;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -44,7 +47,9 @@ public class Pantalla3 extends AppCompatActivity {
         String[] ciudad = {
                 "Medellin", "Barcelona", "Tokyo", "Berlin", "Olmo", "New York"
         };
-        ListAdapter ListAdapter = new ListAdapter(Pantalla3.this, nombres, title, mensajes,  horaUltimoMensaje, numeroTelefon,ciudad, idImagen);
+
+
+        ListaAdaptador ListAdapter = new ListaAdaptador(this, nombres, title, mensajes,  horaUltimoMensaje, numeroTelefon,ciudad, idImagen);
         lista = (ListView) findViewById(R.id.listaView);
         lista.setAdapter(ListAdapter);
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class ListAdapter extends BaseAdapter {
+public class ListaAdaptador extends BaseAdapter {
 
     Context contexto;
 
@@ -16,7 +16,9 @@ public class ListAdapter extends BaseAdapter {
 
     int[] idImagen;
 
-    public ListAdapter (Context contexto, String [] nombres, String[] mensajes, String[] title, String[] horaUltimoMensaje, String[] numeroTelefono, String[] ciudad, int [] idImagen) {
+    LayoutInflater inflater;
+
+    public ListaAdaptador (Context contexto, String [] nombres, String[] mensajes, String[] title, String[] horaUltimoMensaje, String[] numeroTelefono, String[] ciudad, int [] idImagen) {
 
         this.contexto = contexto;
         this.nombres = nombres;
@@ -28,21 +30,15 @@ public class ListAdapter extends BaseAdapter {
         this.idImagen = idImagen;
         inflater = LayoutInflater.from(contexto);
     }
-    LayoutInflater inflater;
-    @Override
-    public int getCount() {
-        return nombres.length;
-    }
 
     @Override
-    public Object getItem(int i) {
-        return null;
-    }
+    public int getCount() {return nombres.length;}
 
     @Override
-    public long getItemId(int i) {
-        return 0;
-    }
+    public Object getItem(int i) {return null; }
+
+    @Override
+    public long getItemId(int i) {return 0; }
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
