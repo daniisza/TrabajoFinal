@@ -16,11 +16,11 @@ public class Pantalla2 extends AppCompatActivity {
         setContentView(R.layout.activity_pantalla2);
 
         int [] idImagen= {
-                R.drawable.nacional,
-                R.drawable.economia,
-                R.drawable.deportes,
-                R.drawable.entretenimiento,
-
+                R.drawable.deportes1,
+                R.drawable.economia1,
+                R.drawable.entretenimiento1,
+                R.drawable.internacional1,
+                R.drawable.tecno1,
     };
 }
 }

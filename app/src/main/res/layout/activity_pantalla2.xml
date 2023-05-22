@@ -9,42 +9,6 @@
     android:orientation="vertical"
     tools:context=".Pantalla2">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:adjustViewBounds="true"
-        android:drawableTop="@drawable/tecno1" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:adjustViewBounds="true"
-        android:drawableTop="@drawable/internacional1" />
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:adjustViewBounds="true"
-        android:drawableTop="@drawable/economia1" />
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:adjustViewBounds="true"
-        android:drawableTop="@drawable/entretenimiento1" />
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:adjustViewBounds="true"
-        android:drawableTop="@drawable/deportes1" />
 
 
 
