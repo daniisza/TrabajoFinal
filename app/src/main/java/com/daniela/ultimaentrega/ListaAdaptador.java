@@ -12,27 +12,24 @@ public class ListaAdaptador extends BaseAdapter {
 
     Context contexto;
 
-    String [] nombres, mensajes, title, horaUltimoMensaje, numeroTelefono, ciudad;
+    String [] encabezado, descripcion, fecha;
 
     int[] idImagen;
 
     LayoutInflater inflater;
 
-    public ListaAdaptador (Context contexto, String [] nombres, String[] mensajes, String[] title, String[] horaUltimoMensaje, String[] numeroTelefono, String[] ciudad, int [] idImagen) {
+    public ListaAdaptador (Context contexto, String [] encabezado, String[] descripcion, String[] fecha, int [] idImagen) {
 
         this.contexto = contexto;
-        this.nombres = nombres;
-        this.title = title;
-        this.mensajes = mensajes;
-        this.horaUltimoMensaje = horaUltimoMensaje;
-        this.numeroTelefono = numeroTelefono;
-        this.ciudad = ciudad;
+        this.encabezado = encabezado;
+        this.descripcion = descripcion;
+        this.fecha = fecha;
         this.idImagen = idImagen;
         inflater = LayoutInflater.from(contexto);
     }
 
     @Override
-    public int getCount() {return nombres.length;}
+    public int getCount() {return encabezado.length;}
 
     @Override
     public Object getItem(int i) {return null; }
@@ -44,15 +41,13 @@ public class ListaAdaptador extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         view = inflater.inflate(R.layout.activity_list_adapter, null);
         ImageView imagenPerfil = view.findViewById(R.id.imagenDePerfil);
-        TextView nombreUsuario = view.findViewById(R.id.nombre);
-        TextView titulo = view.findViewById(R.id.titulo);
-        TextView ultimoMensaje = view.findViewById(R.id.ultimoMensaje);
-        TextView horaMensaje = view.findViewById(R.id.tv_ultimaHora);
+        TextView titulo = view.findViewById(R.id.encabezado);
+        TextView Descripcion = view.findViewById(R.id.descripcion);
+        TextView Fecha = view.findViewById(R.id.fecha);
         imagenPerfil.setImageResource(idImagen[i]);
-        nombreUsuario.setText(mensajes[i]);
-        titulo.setText(title[i]);
-        ultimoMensaje.setText(mensajes[i]);
-        horaMensaje.setText(horaUltimoMensaje[i]);
+        titulo.setText(encabezado[i]);
+        Descripcion.setText(descripcion[i]);
+        Fecha.setText(fecha[i]);
         return view;
     }
 }
