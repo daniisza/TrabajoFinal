@@ -28,40 +28,27 @@ public class Pantalla3 extends AppCompatActivity {
                 R.drawable.tecno1,
 
         };
-        String[] nombres = {
-                "Ronaldo", "One_Piece", "Gmail", "Mustang", "Barca", "Instagram"
+        String[] encabezado = {
+                "Einer Rubio es la revelación del Giro de Italia, otra espectacular etapa", "Las razones por las que la gasolina en Colombia no para de subir", "Johnny Depp rompe el récord millonario de figuras asociadas a fragancias masculinas", "Miles de personas marchan en Montevideo por los desaparecidos en la dictadura", "El G7 pide un uso “responsable” de la inteligencia artificial"
         };
-        String[] title ={
-                "Nuevo mensaje de Ronaldinho", "Anime", "Nuevo inicio de sesión", "autos", "Club de Futbol", "Tu publicación es correcta"
+        String[] descripcion ={
+                "El ciclista boyacense Einer Rubio es la revelación del Giro de Italia 2023, tras la etapa 15 disputada este domingo entre Seregno y Bergamo, de 191 kilómetros ganada por Brandon McNulty y en la que el colombiano entró de quinto y sube en la general. ", "El alza responde a la urgencia de Petro de reducir el gasto fiscal generado por el Fondo de Estabilización de Precios de los Combustibles (Fepc), un programa estatal que subsidia su costo desde 2007 para evitar un impacto en los consumidores.", "Pero Johnny Depp, quien hace un par de años estaba al borde de ser cancelado debido al pleito legal con su exesposa, acaba de poner la vara mucho más alta. La casa de lujo francesa Dior ha decidido pagarle 20 millones, a lo largo de tres años.", "Miles de uruguayos marcharon este sábado por la avenida principal de Montevideo para pedir verdad y justicia por los detenidos desaparecidos durante la última dictadura (1973-1985).", "Los líderes de los siete países formarán un grupo de trabajo en torno al tema y los riesgos que implica, como la protección de los derechos de propiedad intelectual y la desinformación."
         };
-        String[] mensajes = {
-                "Hola, por favor enviar la información...", "Tienes un nuevo capitulo disponible", "Intentaste acceder a tu cuenta...", "Adquiere este vehículo clásico",  "El club fue fundado oficialmente el 29 de noviembre de 1899", "Nuevo mensaje de usuario..."
-        };
-
-        String[] horaUltimoMensaje ={
-                "6:25", "13:15", "00:36", "03:35", "01:15", "23:23"
-        };
-        String[] numeroTelefon ={
-                "3101010", "3112178456", "3207453231", "3045214987", "3132178485", "31112145246"
-        };
-        String[] ciudad = {
-                "Medellin", "Barcelona", "Tokyo", "Berlin", "Olmo", "New York"
+        String[] fecha = {
+                "22/05/2023", "22/05/2023", "22/05/2023", "22/05/2023",  "22/05/2023"
         };
 
 
-        ListaAdaptador ListAdapter = new ListaAdaptador(this, nombres, title, mensajes,  horaUltimoMensaje, numeroTelefon,ciudad, idImagen);
+        ListaAdaptador ListAdapter = new ListaAdaptador(this, encabezado, descripcion, fecha, idImagen);
         lista = (ListView) findViewById(R.id.listaView);
         lista.setAdapter(ListAdapter);
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent irAinformacion = new Intent(Pantalla3.this, Pantalla2.class)
-                        .putExtra("nombre", nombres[position])
-                        .putExtra("titulo", title[position])
-                        .putExtra("mensaje", mensajes[position])
-                        .putExtra("hora", horaUltimoMensaje[position])
-                        .putExtra("telefono", numeroTelefon[position])
-                        .putExtra("ciudad", ciudad[position])
+                        .putExtra("encabezado", encabezado[position])
+                        .putExtra("descripcion", descripcion[position])
+                        .putExtra("fecha", fecha[position])
                         .putExtra("imagen", idImagen[position]);
 
                 startActivity(irAinformacion);
